@@ -1,8 +1,8 @@
 module.exports =
 
-        __NEXT_REGISTER_PAGE('/', function() {
+        __NEXT_REGISTER_PAGE('/about', function() {
           var comp = 
-      webpackJsonp([4],{
+      webpackJsonp([5],{
 
 /***/ "./node_modules/fbjs/lib/emptyFunction.js":
 /***/ (function(module, exports, __webpack_require__) {
@@ -1541,14 +1541,14 @@ module.exports = function(originalModule) {
 
 /***/ }),
 
-/***/ "./pages/index.js":
+/***/ "./pages/about.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/cjs/react.development.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-var _jsxFileName = '/home/pojntfx/Projects/cs-rvwg/zeit-test/pages/index.js';
+var _jsxFileName = '/home/pojntfx/Projects/cs-rvwg/zeit-test/pages/about.js';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -1566,16 +1566,16 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 
 
-var Index = function (_Component) {
-    _inherits(Index, _Component);
+var About = function (_Component) {
+    _inherits(About, _Component);
 
-    function Index() {
-        _classCallCheck(this, Index);
+    function About() {
+        _classCallCheck(this, About);
 
-        return _possibleConstructorReturn(this, (Index.__proto__ || Object.getPrototypeOf(Index)).apply(this, arguments));
+        return _possibleConstructorReturn(this, (About.__proto__ || Object.getPrototypeOf(About)).apply(this, arguments));
     }
 
-    _createClass(Index, [{
+    _createClass(About, [{
         key: 'render',
         value: function render() {
             return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -1587,14 +1587,14 @@ var Index = function (_Component) {
                     }
                 },
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'h1',
+                    'p',
                     {
                         __source: {
                             fileName: _jsxFileName,
                             lineNumber: 7
                         }
                     },
-                    'Zeit Now Test'
+                    'This is the about page.'
                 )
             );
         }
@@ -1605,10 +1605,10 @@ var Index = function (_Component) {
         }
     }]);
 
-    return Index;
+    return About;
 }(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
 
-var _default = Index;
+var _default = About;
 /* harmony default export */ __webpack_exports__["default"] = (_default);
 ;
 
@@ -1621,8 +1621,8 @@ var _default = Index;
         return;
     }
 
-    reactHotLoader.register(Index, 'Index', '/home/pojntfx/Projects/cs-rvwg/zeit-test/pages/index.js');
-    reactHotLoader.register(_default, 'default', '/home/pojntfx/Projects/cs-rvwg/zeit-test/pages/index.js');
+    reactHotLoader.register(About, 'About', '/home/pojntfx/Projects/cs-rvwg/zeit-test/pages/about.js');
+    reactHotLoader.register(_default, 'default', '/home/pojntfx/Projects/cs-rvwg/zeit-test/pages/about.js');
     leaveModule(module);
 })();
 
@@ -1643,22 +1643,22 @@ var _default = Index;
           next.router.update(r, Component)
         }
       }
-    })(typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__.default : (module.exports.default || module.exports), "/")
+    })(typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__.default : (module.exports.default || module.exports), "/about")
   
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("./node_modules/webpack/buildin/harmony-module.js")(module)))
 
 /***/ }),
 
-/***/ 2:
+/***/ 3:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__("./pages/index.js");
+module.exports = __webpack_require__("./pages/about.js");
 
 
 /***/ })
 
-},[2])
+},[3])
           return { page: comp.default }
         })
       ;
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=about.js.map

@@ -1,0 +1,20 @@
+{
+  "name": "soryzon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "live-server . & node-sass scss/common.scss -wo css"
+  },
+  "author": "Felicitas Pojtinger",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "live-server": "^1.2.0",
+    "node-sass": "^4.7.2"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "jquery": "^3.3.1"
+  }
+}

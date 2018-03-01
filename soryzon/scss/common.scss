@@ -1,0 +1,27 @@
+// Bootstrap
+@import "node_modules/bootstrap/scss/bootstrap";
+// Home style
+@include media-breakpoint-up(md) {
+  section#home {
+    // Make buttons in the jumbotron smaller
+    .btn {
+      max-width: 10rem;
+    }
+  }
+}
+
+// Services style
+section#services {
+  .d-flex {
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+    > div {
+      // Add a margin to the bottom of each card
+      @extend .mb-3;
+    }
+    .col-12 {
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+    }
+  }
+}
