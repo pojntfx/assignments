@@ -6,7 +6,9 @@ const WelcomeTemplate = ({ ...otherProps }) => (
   <Fragment>
     <div {...otherProps}>
       <h1>We are OneWorld</h1>
-      <h2>Interconnecting humans, since 2014.</h2>
+      <h2>
+        <em>Interconnecting humans, since 2014.</em>
+      </h2>
     </div>
     <ReadMoreWrapper>
       <ButtonGroup>
@@ -30,8 +32,9 @@ const ReadMoreWrapper = styled.div.attrs({
 
 export const Welcome = styled(WelcomeTemplate).attrs({
   className:
-    "d-flex align-center flex-md-row flex-column justify-content-around px-5 bg-primary text-light"
+    "d-flex align-center flex-md-row flex-column justify-content-around px-5 text-light"
 })`
   padding-top: 50vh;
   padding-bottom: 50vh;
+  background: linear-gradient(#007bff, #77f775) !important;
 `;

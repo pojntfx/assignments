@@ -25,7 +25,7 @@ export class MainNavigation extends Component {
     const { navbarIsOpen } = this.state;
 
     return (
-      <Navbar color="primary" dark expand="sm" className="fixed-top">
+      <Navbar color="primary" dark expand="sm" className="sticky-top">
         <NavbarBrand href="/">{title}</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={navbarIsOpen} navbar>
