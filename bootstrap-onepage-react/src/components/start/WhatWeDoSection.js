@@ -14,7 +14,7 @@ export const WhatWeDoSection = () => (
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
         fugit sed id autem.
       </SimpleGridElement>
-      <SimpleGridElement title="Talking">
+      <SimpleGridElement title="Talks">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
         fugit sed id autem.
       </SimpleGridElement>

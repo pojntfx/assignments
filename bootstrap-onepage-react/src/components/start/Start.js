@@ -11,10 +11,5 @@ export const Start = () => (
     <WhatWeDoSection />
     <OurCustomersSection />
     <ShowcaseSection />
-
-    {/* TextBoxes */}
-    {/* Slider */}
-    {/* Modal */}
-    {/* Footer */}
   </StartLayout>
 );

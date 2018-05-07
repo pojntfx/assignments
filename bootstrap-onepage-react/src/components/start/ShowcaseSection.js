@@ -1,15 +1,35 @@
 import React, { Component, Fragment } from "react";
 import { Section } from "../global/Section";
 import styled from "styled-components";
-import { Collapse, Button } from "reactstrap";
+import { Collapse, Button, Card, CardBody } from "reactstrap";
 
 export const ShowcaseSection = () => (
-  <Section title="What we do" link="what-we-do">
-    <div className="row">
-      <ExpandableElement summary="magic">
-        Lorem ipsum dolor sit amet.
-      </ExpandableElement>
-    </div>
+  <Section title="Showcase" link="showcase">
+    <ExpandableElement summary="Linux">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam, illo
+      cum! Corporis soluta, atque est fuga omnis quisquam voluptatum assumenda
+      doloremque ad!
+    </ExpandableElement>
+    <ExpandableElement summary="FreeBSD">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam, illo
+      cum! Corporis soluta, atque est fuga omnis quisquam voluptatum assumenda
+      doloremque ad!
+    </ExpandableElement>
+    <ExpandableElement summary="DragonFlyBSD">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam, illo
+      cum! Corporis soluta, atque est fuga omnis quisquam voluptatum assumenda
+      doloremque ad!
+    </ExpandableElement>
+    <ExpandableElement summary="GNU">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam, illo
+      cum! Corporis soluta, atque est fuga omnis quisquam voluptatum assumenda
+      doloremque ad!
+    </ExpandableElement>
+    <ExpandableElement summary="Hurd">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam, illo
+      cum! Corporis soluta, atque est fuga omnis quisquam voluptatum assumenda
+      doloremque ad!
+    </ExpandableElement>
   </Section>
 );
 
@@ -28,18 +48,28 @@ class CollapseComponent extends Component {
 
   render() {
     const { isOpen } = this.state;
-    const { summary } = this.props;
+    const { summary, children, ...otherProps } = this.props;
     const { toggleCollapse } = this;
 
     return (
       <Fragment>
-        <Button outline onClick={toggleCollapse}>
+        <Button
+          outline
+          block
+          color="primary"
+          onClick={toggleCollapse}
+          className="mb-3"
+        >
           {summary}
         </Button>
-        <Collapse isOpen={isOpen}>Lorem ipsum dolor sit amet.</Collapse>
+        <Collapse isOpen={isOpen} {...otherProps} className="mb-3">
+          <Card>
+            <CardBody>{children}</CardBody>
+          </Card>
+        </Collapse>
       </Fragment>
     );
   }
 }
 
-const SimpleGridElement = styled.div.attrs({ className: "col-12 col-sm-6" })``;
+const SimpleGridElement = styled.div``;
